@@ -64,7 +64,7 @@ class SignUp extends Component {
                   value={password}
                   onChange={this.handleChange}/>
               </div>
-              <button type="submit" class="btn btn-primary btn-lg btn-block my-1">Register</button>
+              <button type="submit" class="btn btn-primary btn-lg btn-block my-1">Login</button>
               <Link to='/signup'>Don't have an account yet? Sign up!</Link>
             </CardContent>
           </Card>
