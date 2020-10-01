@@ -39,14 +39,20 @@ class ChatPanel extends Component {
         <Card elevation={24} className="elevation-24 my-2" style={{ width: '90vh' }}>
           <CardContent style={{ height: '500px', overflowY: 'scroll' }}>
             <div class='row'>
-              {/*
-                How can we make our chats show up?
-                This will cover a function that is available to us in javascript
-                called map. In order to do this, I've provided a component that simply takes
-                the content from the database as while as which side we should put the chat
-                bubble on (right for the sender and left for anyone else)
-                <ChatBubble direction="right or left" 
-              */}
+              {chats.map((curContent) => {
+                if (curContent.uid === user.uid) {
+                  return (
+                    <div class='col-12' style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                      <ChatBubble chatInfo={curContent} direction='right' />
+                    </div>
+                  )
+                }
+                return (
+                  <div class='col-12' style={{ display: 'flex', justifyContent: 'flex-start' }}>
+                    <ChatBubble chatInfo={curContent} direction='left' />
+                  </div>
+                )
+              })}
             </div>
           </CardContent>
         </Card>
