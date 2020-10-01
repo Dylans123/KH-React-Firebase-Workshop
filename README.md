@@ -1,5 +1,5 @@
 # Knight Hacks React Firebase Workshop
-This is the repository for all the code for the React / Firebase workshop for Knight Hacks. Link to the hosted app is: https://complete-chat-b7cff.firebaseapp.com/login
+This is the repository for all the code for the React / Firebase workshop for Knight Hacks. Link to the hosted app is: https://complete-chat-b7cff.firebaseapp.com/
 
 ### Initial Setup
 For this workshop, you will need three things.
